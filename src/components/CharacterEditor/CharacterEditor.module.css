@@ -1,12 +1,14 @@
+main {
+  isolation: isolate;
+}
+
 .characterEditor {
   padding-top: 128px;
   padding-bottom: 64px;
 }
 
-.maxWidthWrapper {
-}
-
 .header {
+  max-width: 65%;
   padding-bottom: 64px;
 }
 
@@ -24,7 +26,14 @@
 }
 
 .characterWrapper {
+  position: fixed;
+  min-height: 500px;
+  width: 100%;
+  max-width: calc(1024px * 0.35 );
+  top: 130px;
+  left: 65vw;
 }
 
 .controlColumn {
+  max-width: 50%;
 }
